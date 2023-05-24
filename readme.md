@@ -5,17 +5,18 @@
 
 Retry is a simple Golang library for automatically retrying failed operations. It provides configurable mechanisms for retrying operations upon failure, such as maximum retry attempts, exponential backoff, and maximum elapsed time.
 
-Installation
+## Installation
 To install the Retry library, simply run:
 
-arduino
-Copy code
+```arduino
 go get github.com/karngyan/retry
-Usage
+```
+
+## Usage
+
 Below is a basic example demonstrating how to use Retry to automatically retry a failing operation:
 
-go
-Copy code
+```go
 package main
 
 import (
@@ -44,3 +45,4 @@ func main() {
 		fmt.Println("Operation failed after retries:", err)
 	}
 }
+```
